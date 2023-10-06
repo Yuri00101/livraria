@@ -1,0 +1,197 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #280003;
+    font-family: "Ubuntu Mono", monospace;
+    font-weight: 400;
+    margin: 30px;
+    border: 20;
+    padding: 10px;
+  }
+
+.diferente {
+    font-family: 'MedievalSharp', cursive;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 3%;
+    left: 40%;
+    font-size: 100px;
+    color: #593718;
+    display: block;
+}
+
+.dragao {
+    align-content: center;
+    width: 1200px;
+    position: absolute;
+    left: 375px;
+    display: block;
+    margin: block;
+}
+
+.container {
+    text-align: center;
+}
+
+.perfil {
+  width: 5%;
+  height: 8%;
+  position: absolute;
+  left: 19%;
+  top: 6%;
+  color:#593718;
+}
+
+.gps {
+  width: 5%;
+  height: 8%;
+  position: absolute;
+  right: 300px;
+  top: 6%;
+  color:#593718;
+}
+
+.escudo {
+  width: 5%;
+  height: 8%;
+  position: absolute;
+  right: 47%;
+  top: 23%;
+  color:#593718;
+}
+
+.barra {
+  height: 10%;
+  width: 30%;
+  position: absolute;
+  top: 10%;
+  right: 35%;
+}
+
+.achar {
+  width: 3%;
+  height: 3%;
+  position: absolute;
+  right: 37%;
+  top: 15%;
+  color:#593718;
+}
+
+.carro {
+  width: 5%;
+  height: 8%;
+  position: absolute;
+  right: 37%;
+  top: 22%;
+  color:#593718;
+}
+
+.coracao {
+  width: 5%;
+  height: 8%;
+  position: absolute;
+  left: 37%;
+  top: 23%;
+  color:#593718;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  gap: 10px;
+
+  > div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #593718;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("https://img.freepik.com/fotos-gratis/um-livro-com-o-nome-burguer-na-capa_188544-54143.jpg?w=1380&t=st=1696462927~exp=1696463527~hmac=fc58bfe6fbfbe953afffbd611f175129fe7fe4e6b64574429d74e4b272909b47")
+        no-repeat 50% / cover;
+        top: 115%;
+        height: 200px;
+    }
+    &:nth-of-type(2) {
+      background: url("https://media.istockphoto.com/id/1225714975/vector/fight-with-the-giants-of-the-dark-world.jpg?s=2048x2048&w=is&k=20&c=DS-SdsI2L_psIZZQ7Dc9oz7OG9WCKlvCJYxRhQDz_rU=")
+        no-repeat 50% / cover;
+        top: 115%;
+        height: 200px;
+    }
+    &:nth-of-type(3) {
+      background: url("https://media.istockphoto.com/id/1179346110/photo/the-dwelling-the-place-has-it-own-devil-monster-in-haunted-house-3d-illustration.jpg?s=2048x2048&w=is&k=20&c=4lB050raDNhGHWhsKZqU5AAJQ4-LfyVeGvIjOXmF3U8=")
+        no-repeat 50% / cover;
+        top: 115%;
+        height: 200px;
+    }
+    &:nth-of-type(4) {
+      background: url("https://media.istockphoto.com/id/974175570/photo/sun-beams-in-bright-and-foggy-autumn-forest.jpg?s=2048x2048&w=is&k=20&c=CvmRseh_LWWqQ8Qwks2kEcN2dNrvFLZvbqTqQvTcHok=")
+        no-repeat 50% / cover;
+        top: 115%;
+        height: 200px;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #593718;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+
+
+
+
+
+
+  
